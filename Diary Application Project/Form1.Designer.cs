@@ -28,72 +28,165 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.serach_on_google = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.calendar_label = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.timer_label = new System.Windows.Forms.Label();
+            this.BackToPc = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.versionrelease_label = new System.Windows.Forms.Label();
+            this.labelversion = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.AddMemo = new System.Windows.Forms.ToolStripButton();
             this.SerachMemo = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.Settings = new System.Windows.Forms.ToolStripDropDownButton();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Tools = new System.Windows.Forms.ToolStripDropDownButton();
+            this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Info = new System.Windows.Forms.ToolStripDropDownButton();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Tools = new System.Windows.Forms.ToolStripDropDownButton();
-            this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Settings = new System.Windows.Forms.ToolStripDropDownButton();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.BackToPc = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.serach_on_google);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.calendar_label);
+            this.panel1.Controls.Add(this.monthCalendar1);
+            this.panel1.Controls.Add(this.timer_label);
             this.panel1.Controls.Add(this.BackToPc);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Location = new System.Drawing.Point(0, 75);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(189, 456);
+            this.panel1.Size = new System.Drawing.Size(283, 657);
             this.panel1.TabIndex = 0;
+            // 
+            // serach_on_google
+            // 
+            this.serach_on_google.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serach_on_google.Location = new System.Drawing.Point(61, 300);
+            this.serach_on_google.Name = "serach_on_google";
+            this.serach_on_google.Size = new System.Drawing.Size(193, 25);
+            this.serach_on_google.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(27, 299);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(28, 27);
+            this.button1.TabIndex = 7;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // calendar_label
+            // 
+            this.calendar_label.AutoSize = true;
+            this.calendar_label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar_label.Location = new System.Drawing.Point(75, 59);
+            this.calendar_label.Name = "calendar_label";
+            this.calendar_label.Size = new System.Drawing.Size(124, 25);
+            this.calendar_label.TabIndex = 6;
+            this.calendar_label.Text = "My Calendar";
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(27, 104);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 5;
+            // 
+            // timer_label
+            // 
+            this.timer_label.BackColor = System.Drawing.Color.Black;
+            this.timer_label.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timer_label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.timer_label.Location = new System.Drawing.Point(-1, 0);
+            this.timer_label.Name = "timer_label";
+            this.timer_label.Size = new System.Drawing.Size(283, 51);
+            this.timer_label.TabIndex = 3;
+            this.timer_label.Text = "00:00:00";
+            this.timer_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BackToPc
+            // 
+            this.BackToPc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BackToPc.BackColor = System.Drawing.Color.Transparent;
+            this.BackToPc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToPc.Image = ((System.Drawing.Image)(resources.GetObject("BackToPc.Image")));
+            this.BackToPc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BackToPc.Location = new System.Drawing.Point(67, 592);
+            this.BackToPc.Name = "BackToPc";
+            this.BackToPc.Size = new System.Drawing.Size(146, 52);
+            this.BackToPc.TabIndex = 0;
+            this.BackToPc.Text = "Back to PC";
+            this.BackToPc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BackToPc.UseVisualStyleBackColor = false;
+            this.BackToPc.Click += new System.EventHandler(this.BackToPc_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.versionrelease_label);
+            this.panel2.Controls.Add(this.labelversion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(189, 400);
+            this.panel2.Location = new System.Drawing.Point(0, 732);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(595, 56);
+            this.panel2.Size = new System.Drawing.Size(936, 56);
             this.panel2.TabIndex = 1;
+            // 
+            // versionrelease_label
+            // 
+            this.versionrelease_label.AutoSize = true;
+            this.versionrelease_label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.versionrelease_label.Location = new System.Drawing.Point(93, 20);
+            this.versionrelease_label.Name = "versionrelease_label";
+            this.versionrelease_label.Size = new System.Drawing.Size(12, 15);
+            this.versionrelease_label.TabIndex = 1;
+            this.versionrelease_label.Text = "-";
+            // 
+            // labelversion
+            // 
+            this.labelversion.AutoSize = true;
+            this.labelversion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelversion.Location = new System.Drawing.Point(18, 20);
+            this.labelversion.Name = "labelversion";
+            this.labelversion.Size = new System.Drawing.Size(51, 15);
+            this.labelversion.TabIndex = 0;
+            this.labelversion.Text = "Version:";
             // 
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.toolStrip1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.AddMemo,
-            this.toolStripSeparator1,
             this.SerachMemo,
-            this.toolStripSeparator2,
             this.Settings,
-            this.toolStripSeparator3,
             this.Tools,
-            this.toolStripSeparator4,
             this.Info,
-            this.toolStripButton7,
-            this.toolStripSeparator5});
-            this.toolStrip1.Location = new System.Drawing.Point(189, 0);
+            this.toolStripButton7});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(595, 81);
+            this.toolStrip1.Size = new System.Drawing.Size(936, 75);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -131,25 +224,45 @@
             this.SerachMemo.Text = "Serach Memo";
             this.SerachMemo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripSeparator1
+            // Settings
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 81);
+            this.Settings.AutoSize = false;
+            this.Settings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingsToolStripMenuItem});
+            this.Settings.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Settings.Image = ((System.Drawing.Image)(resources.GetObject("Settings.Image")));
+            this.Settings.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.Settings.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Settings.Name = "Settings";
+            this.Settings.Size = new System.Drawing.Size(80, 73);
+            this.Settings.Text = "Settings";
+            this.Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripSeparator2
+            // settingsToolStripMenuItem
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 81);
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
+            this.settingsToolStripMenuItem.Text = "Settings";
             // 
-            // toolStripSeparator3
+            // Tools
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 81);
+            this.Tools.AutoSize = false;
+            this.Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usersToolStripMenuItem});
+            this.Tools.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tools.Image = ((System.Drawing.Image)(resources.GetObject("Tools.Image")));
+            this.Tools.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.Tools.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Tools.Name = "Tools";
+            this.Tools.Size = new System.Drawing.Size(80, 73);
+            this.Tools.Text = "Tools";
+            this.Tools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // toolStripSeparator4
+            // usersToolStripMenuItem
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 81);
+            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.usersToolStripMenuItem.Text = "Users";
             // 
             // Info
             // 
@@ -169,54 +282,14 @@
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // Tools
-            // 
-            this.Tools.AutoSize = false;
-            this.Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usersToolStripMenuItem});
-            this.Tools.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tools.Image = ((System.Drawing.Image)(resources.GetObject("Tools.Image")));
-            this.Tools.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.Tools.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Tools.Name = "Tools";
-            this.Tools.Size = new System.Drawing.Size(80, 73);
-            this.Tools.Text = "Tools";
-            this.Tools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // usersToolStripMenuItem
-            // 
-            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.usersToolStripMenuItem.Text = "Users";
-            // 
-            // Settings
-            // 
-            this.Settings.AutoSize = false;
-            this.Settings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.settingsToolStripMenuItem});
-            this.Settings.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Settings.Image = ((System.Drawing.Image)(resources.GetObject("Settings.Image")));
-            this.Settings.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.Settings.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(80, 73);
-            this.Settings.Text = "Settings";
-            this.Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // toolStripButton7
             // 
@@ -231,35 +304,23 @@
             this.toolStripButton7.Text = "Minimize";
             this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
-            // toolStripSeparator5
+            // timer1
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 81);
-            // 
-            // BackToPc
-            // 
-            this.BackToPc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BackToPc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackToPc.Image = ((System.Drawing.Image)(resources.GetObject("BackToPc.Image")));
-            this.BackToPc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BackToPc.Location = new System.Drawing.Point(19, 391);
-            this.BackToPc.Name = "BackToPc";
-            this.BackToPc.Size = new System.Drawing.Size(149, 52);
-            this.BackToPc.TabIndex = 0;
-            this.BackToPc.Text = "Back to PC";
-            this.BackToPc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BackToPc.UseVisualStyleBackColor = true;
-            this.BackToPc.Click += new System.EventHandler(this.BackToPc_Click);
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(784, 456);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.panel2);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(936, 788);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -269,7 +330,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dairy Register";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -284,10 +349,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton AddMemo;
         private System.Windows.Forms.ToolStripButton SerachMemo;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripDropDownButton Settings;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton Tools;
@@ -296,8 +357,15 @@
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton7;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.Button BackToPc;
+        private System.Windows.Forms.Label timer_label;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label calendar_label;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Label labelversion;
+        private System.Windows.Forms.Label versionrelease_label;
+        private System.Windows.Forms.TextBox serach_on_google;
+        private System.Windows.Forms.Button button1;
     }
 }
 
