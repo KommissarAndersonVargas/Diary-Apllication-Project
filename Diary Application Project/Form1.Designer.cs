@@ -85,7 +85,7 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImage = global::Diary_Application_Project.Properties.Resources.google2;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(27, 299);
             this.button1.Name = "button1";
@@ -100,7 +100,7 @@
             // 
             this.calendar_label.AutoSize = true;
             this.calendar_label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendar_label.Location = new System.Drawing.Point(75, 59);
+            this.calendar_label.Location = new System.Drawing.Point(78, 59);
             this.calendar_label.Name = "calendar_label";
             this.calendar_label.Size = new System.Drawing.Size(124, 25);
             this.calendar_label.TabIndex = 6;
@@ -129,7 +129,7 @@
             this.BackToPc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BackToPc.BackColor = System.Drawing.Color.Transparent;
             this.BackToPc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackToPc.Image = ((System.Drawing.Image)(resources.GetObject("BackToPc.Image")));
+            this.BackToPc.Image = global::Diary_Application_Project.Properties.Resources.computer;
             this.BackToPc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BackToPc.Location = new System.Drawing.Point(67, 592);
             this.BackToPc.Name = "BackToPc";
@@ -194,18 +194,18 @@
             // 
             this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.Image = global::Diary_Application_Project.Properties.Resources.close2;
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(52, 78);
+            this.toolStripButton1.Size = new System.Drawing.Size(52, 72);
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // AddMemo
             // 
             this.AddMemo.AutoSize = false;
             this.AddMemo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddMemo.Image = ((System.Drawing.Image)(resources.GetObject("AddMemo.Image")));
+            this.AddMemo.Image = global::Diary_Application_Project.Properties.Resources.edit;
             this.AddMemo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.AddMemo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.AddMemo.Name = "AddMemo";
@@ -216,11 +216,11 @@
             // SerachMemo
             // 
             this.SerachMemo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SerachMemo.Image = ((System.Drawing.Image)(resources.GetObject("SerachMemo.Image")));
+            this.SerachMemo.Image = global::Diary_Application_Project.Properties.Resources.search;
             this.SerachMemo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.SerachMemo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SerachMemo.Name = "SerachMemo";
-            this.SerachMemo.Size = new System.Drawing.Size(108, 78);
+            this.SerachMemo.Size = new System.Drawing.Size(108, 72);
             this.SerachMemo.Text = "Serach Memo";
             this.SerachMemo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -230,7 +230,7 @@
             this.Settings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem});
             this.Settings.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Settings.Image = ((System.Drawing.Image)(resources.GetObject("Settings.Image")));
+            this.Settings.Image = global::Diary_Application_Project.Properties.Resources.settings;
             this.Settings.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Settings.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Settings.Name = "Settings";
@@ -250,7 +250,7 @@
             this.Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usersToolStripMenuItem});
             this.Tools.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tools.Image = ((System.Drawing.Image)(resources.GetObject("Tools.Image")));
+            this.Tools.Image = global::Diary_Application_Project.Properties.Resources.people;
             this.Tools.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Tools.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Tools.Name = "Tools";
@@ -271,7 +271,7 @@
             this.aboutUsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.Info.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Info.Image = ((System.Drawing.Image)(resources.GetObject("Info.Image")));
+            this.Info.Image = global::Diary_Application_Project.Properties.Resources.info1;
             this.Info.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Info.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Info.Name = "Info";
@@ -315,7 +315,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Diary_Application_Project.Properties.Resources.bears3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 788);
             this.Controls.Add(this.panel1);
