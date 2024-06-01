@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Keys = OpenQA.Selenium.Keys;
+using OpenQA.Selenium.Edge;
 
 namespace Diary_Application_Project
 {
@@ -70,7 +71,7 @@ namespace Diary_Application_Project
         }
         public void SearchOnGoogleChrome(string itenToSearch)
         {
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new EdgeDriver();
 
             try
             {
@@ -90,6 +91,21 @@ namespace Diary_Application_Project
             }
 
         }
-       
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About_Us aboutUs = new About_Us();
+            aboutUs.Show();
+        }
+
+        private void clear_button_Click(object sender, EventArgs e)
+        {
+            serach_on_google.Clear();
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Users users = new Users();
+            users.Show();
+        }
     }
 }

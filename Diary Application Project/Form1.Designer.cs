@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.clear_button = new System.Windows.Forms.Button();
             this.serach_on_google = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.calendar_label = new System.Windows.Forms.Label();
@@ -62,6 +63,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.clear_button);
             this.panel1.Controls.Add(this.serach_on_google);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.calendar_label);
@@ -75,19 +77,31 @@
             this.panel1.Size = new System.Drawing.Size(283, 657);
             this.panel1.TabIndex = 0;
             // 
+            // clear_button
+            // 
+            this.clear_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.clear_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_button.Location = new System.Drawing.Point(233, 302);
+            this.clear_button.Name = "clear_button";
+            this.clear_button.Size = new System.Drawing.Size(45, 26);
+            this.clear_button.TabIndex = 9;
+            this.clear_button.Text = "Clear";
+            this.clear_button.UseVisualStyleBackColor = true;
+            this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
+            // 
             // serach_on_google
             // 
             this.serach_on_google.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.serach_on_google.Location = new System.Drawing.Point(61, 300);
+            this.serach_on_google.Location = new System.Drawing.Point(38, 302);
             this.serach_on_google.Name = "serach_on_google";
-            this.serach_on_google.Size = new System.Drawing.Size(193, 25);
+            this.serach_on_google.Size = new System.Drawing.Size(189, 25);
             this.serach_on_google.TabIndex = 8;
             // 
             // button1
             // 
             this.button1.BackgroundImage = global::Diary_Application_Project.Properties.Resources.google2;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(27, 299);
+            this.button1.Location = new System.Drawing.Point(4, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(28, 27);
             this.button1.TabIndex = 7;
@@ -261,8 +275,9 @@
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.usersToolStripMenuItem.Text = "Users";
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // Info
             // 
@@ -284,6 +299,7 @@
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.aboutUsToolStripMenuItem.Text = "About Us";
+            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -366,6 +382,7 @@
         private System.Windows.Forms.Label versionrelease_label;
         private System.Windows.Forms.TextBox serach_on_google;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button clear_button;
     }
 }
 
