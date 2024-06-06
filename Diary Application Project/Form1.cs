@@ -50,8 +50,12 @@ namespace Diary_Application_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             GetTimeNow();
             GetVersion();
+            user_name.Text = Properties.Settings.Default.User_name;
+            Login login = new Login();
+            login.ShowDialog();
         }
         public void GetTimeNow() 
         {
@@ -75,7 +79,7 @@ namespace Diary_Application_Project
 
             try
             {
-                // Abre o Google Chrome
+                // Abre o Edge Microsoft
                 driver.Navigate().GoToUrl("https://www.google.com");
 
                 // Localiza a caixa de pesquisa e insere o texto
@@ -106,6 +110,17 @@ namespace Diary_Application_Project
         {
             Users users = new Users();
             users.Show();
+        }
+
+        private void loockScreenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
+        }
+
+        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
         }
     }
 }

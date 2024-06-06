@@ -18,3 +18,4 @@ C:\Users\Usuario\source\repos\Diary Application Project\Diary Application Projec
 C:\Users\Usuario\source\repos\Diary Application Project\Diary Application Project\obj\Debug\Diary Ap.282F651E.Up2Date
 C:\Users\Usuario\source\repos\Diary Application Project\Diary Application Project\obj\Debug\Diary_Application_Project.About_Us.resources
 C:\Users\Usuario\source\repos\Diary Application Project\Diary Application Project\obj\Debug\Diary_Application_Project.Users.resources
+C:\Users\Usuario\source\repos\Diary Application Project\Diary Application Project\obj\Debug\Diary_Application_Project.Login.resources

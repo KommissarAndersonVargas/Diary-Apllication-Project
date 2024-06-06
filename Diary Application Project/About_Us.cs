@@ -31,7 +31,11 @@ namespace Diary_Application_Project
 
         private void About_Us_Load(object sender, EventArgs e)
         {
-            
+            GetVersion();
+        }
+        public void GetVersion()
+        {
+            this.version_number.Text = Application.ProductVersion.ToString();
         }
     }
 }

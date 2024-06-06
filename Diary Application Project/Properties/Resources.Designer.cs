@@ -63,6 +63,46 @@ namespace Diary_Application_Project.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3994380_access_enter_input_login_sign_in_icon {
+            get {
+                object obj = ResourceManager.GetObject("_3994380_access_enter_input_login_sign_in_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _49576_new_add_plus_user_icon {
+            get {
+                object obj = ResourceManager.GetObject("_49576_new_add_plus_user_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+        /// </summary>
+        internal static System.Drawing.Icon _7030346_login_ui_basic_app_sign_in_user_interface_icon {
+            get {
+                object obj = ResourceManager.GetObject("_7030346_login_ui_basic_app_sign_in_user_interface_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aurora_laranja_canada {
+            get {
+                object obj = ResourceManager.GetObject("aurora_laranja_canada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bears3 {
             get {
                 object obj = ResourceManager.GetObject("bears3", resourceCulture);

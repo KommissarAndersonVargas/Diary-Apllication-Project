@@ -39,6 +39,8 @@
             this.timer_label = new System.Windows.Forms.Label();
             this.BackToPc = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.user_name = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.versionrelease_label = new System.Windows.Forms.Label();
             this.labelversion = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -54,9 +56,13 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.loockScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -158,6 +164,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.user_name);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.versionrelease_label);
             this.panel2.Controls.Add(this.labelversion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -165,6 +173,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(936, 56);
             this.panel2.TabIndex = 1;
+            // 
+            // user_name
+            // 
+            this.user_name.AutoSize = true;
+            this.user_name.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_name.Location = new System.Drawing.Point(317, 20);
+            this.user_name.Name = "user_name";
+            this.user_name.Size = new System.Drawing.Size(12, 15);
+            this.user_name.TabIndex = 3;
+            this.user_name.Text = "-";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(230, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "User Name:";
             // 
             // versionrelease_label
             // 
@@ -275,7 +303,7 @@
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
@@ -326,6 +354,28 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loockScreenToolStripMenuItem,
+            this.refreshToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(157, 48);
+            // 
+            // loockScreenToolStripMenuItem
+            // 
+            this.loockScreenToolStripMenuItem.Name = "loockScreenToolStripMenuItem";
+            this.loockScreenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loockScreenToolStripMenuItem.Text = "Lock Aplication";
+            this.loockScreenToolStripMenuItem.Click += new System.EventHandler(this.loockScreenToolStripMenuItem_Click);
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -334,6 +384,7 @@
             this.BackgroundImage = global::Diary_Application_Project.Properties.Resources.bears3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 788);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.toolStrip1);
@@ -353,6 +404,7 @@
             this.panel2.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -383,6 +435,11 @@
         private System.Windows.Forms.TextBox serach_on_google;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button clear_button;
+        private System.Windows.Forms.Label user_name;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem loockScreenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
     }
 }
 
