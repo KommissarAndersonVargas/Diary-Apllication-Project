@@ -25,8 +25,7 @@ namespace Diary_Application_Project
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            
-            if(MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             this.Close();
 
             else {} // Nao faz nada

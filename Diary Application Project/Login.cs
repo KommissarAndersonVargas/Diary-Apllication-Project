@@ -26,7 +26,7 @@ namespace Diary_Application_Project
         private void closeLonginAndApp_Click(object sender, EventArgs e)
         {
             this.Close();
-            MessageBox.Show("Closing the Application");
+            MessageBox.Show("Closing the Application", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             Application.Exit(); // fecha o programa
         }
 

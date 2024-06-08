@@ -69,6 +69,7 @@ namespace Diary_Application_Project
         public void SaveResourceInfo()
         {
             Properties.Settings.Default.User_name = userName;
+            Properties.Settings.Default.User_pass = passWord;
             Properties.Settings.Default.Save();
         }
     }

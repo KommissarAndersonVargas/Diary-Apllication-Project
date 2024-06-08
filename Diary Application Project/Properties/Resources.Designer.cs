@@ -83,6 +83,16 @@ namespace Diary_Application_Project.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _11211455_highlighter_marker_tip_education_felt_tip_pen_icon {
+            get {
+                object obj = ResourceManager.GetObject("_11211455_highlighter_marker_tip_education_felt_tip_pen_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1208662_brush_color_colour_paint_repair_icon {
             get {
                 object obj = ResourceManager.GetObject("_1208662_brush_color_colour_paint_repair_icon", resourceCulture);
@@ -96,6 +106,16 @@ namespace Diary_Application_Project.Properties {
         internal static System.Drawing.Bitmap _173947_paste_icon {
             get {
                 object obj = ResourceManager.GetObject("_173947_paste_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2250037_art_artistic_brush_materials_paint_icon {
+            get {
+                object obj = ResourceManager.GetObject("_2250037_art_artistic_brush_materials_paint_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +276,16 @@ namespace Diary_Application_Project.Properties {
         internal static System.Drawing.Bitmap _9027551_undo_arrow_icon {
             get {
                 object obj = ResourceManager.GetObject("_9027551_undo_arrow_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9110890_text_align_right_icon {
+            get {
+                object obj = ResourceManager.GetObject("_9110890_text_align_right_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
