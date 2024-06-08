@@ -43,16 +43,16 @@ namespace Diary_Application_Project
                 if (CheckPassWord())
                 {
                     UserInfo userInfo = new UserInfo(userName, passWord, passWordConfirm);
-                    MessageBox.Show("All information saved successfully");
+                    MessageBox.Show("All information saved successfully", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 if (!CheckPassWord())
                 {
-                    MessageBox.Show("All the information must be informated corretly to continue");
+                    MessageBox.Show("All the information must be informated corretly to continue","Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("All the information must be informated to continue");
+                MessageBox.Show("All the information must be informated to continue", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         public bool CheckPassWord()

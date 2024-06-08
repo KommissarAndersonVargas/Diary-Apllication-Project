@@ -64,7 +64,7 @@
             // 
             this.link_about_us.AutoSize = true;
             this.link_about_us.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_about_us.Location = new System.Drawing.Point(172, 217);
+            this.link_about_us.Location = new System.Drawing.Point(173, 264);
             this.link_about_us.Name = "link_about_us";
             this.link_about_us.Size = new System.Drawing.Size(199, 17);
             this.link_about_us.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(237, 306);
+            this.label4.Location = new System.Drawing.Point(230, 373);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 17);
             this.label4.TabIndex = 4;
@@ -86,7 +86,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(205, 346);
+            this.label5.Location = new System.Drawing.Point(198, 413);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 17);
             this.label5.TabIndex = 5;
@@ -98,9 +98,9 @@
             this.panel1.Controls.Add(this.version_number);
             this.panel1.Controls.Add(this.version);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 393);
+            this.panel1.Location = new System.Drawing.Point(0, 488);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(542, 57);
+            this.panel1.Size = new System.Drawing.Size(543, 57);
             this.panel1.TabIndex = 9;
             // 
             // version_number
@@ -128,7 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(542, 450);
+            this.ClientSize = new System.Drawing.Size(543, 545);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
