@@ -3,7 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|c:\\users\\usuario\\source\\repos\\diary application project\\diary application project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\diary application project\\memo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\memo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Diary Application Project||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\diary application project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -11,7 +18,15 @@
       "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|c:\\users\\usuario\\source\\repos\\diary application project\\diary application project\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\diary application project\\memo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\memo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\diary application project\\memo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\memo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\diary application project\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -25,9 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\diary application project\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Diary Application Project||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\diary application project\\class\\toserach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,6 +64,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\diary application project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|c:\\users\\usuario\\source\\repos\\diary application project\\diary application project\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{CD122FDF-1388-4894-8E26-C556A5BD06AD}|Diary Application Project\\Diary Application Project.csproj|solutionrelative:diary application project\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,11 +77,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Memo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Memo.Designer.cs",
+              "RelativeDocumentMoniker": "Diary Application Project\\Memo.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Memo.Designer.cs",
+              "RelativeToolTip": "Diary Application Project\\Memo.Designer.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAA0wBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T00:59:53.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Memo.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Memo.cs",
+              "RelativeDocumentMoniker": "Diary Application Project\\Memo.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Memo.cs",
+              "RelativeToolTip": "Diary Application Project\\Memo.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAApwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T00:59:37.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Memo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Memo.cs",
+              "RelativeDocumentMoniker": "Diary Application Project\\Memo.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Memo.cs [Design]",
+              "RelativeToolTip": "Diary Application Project\\Memo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T00:48:39.312Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Form1.Designer.cs",
@@ -73,12 +127,11 @@
               "RelativeToolTip": "Diary Application Project\\Form1.Designer.cs",
               "ViewState": "AQIAAGoBAAAAAAAAAADgv3ABAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T21:15:09.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T21:15:09.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Login.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Login.cs",
@@ -90,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Login.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Login.cs",
@@ -101,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "UserInfo.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Class\\UserInfo.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Class\\UserInfo.cs",
@@ -113,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Users.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Users.cs",
@@ -125,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Users.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Users.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Users.cs",
@@ -136,18 +189,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Diary Application Project",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Diary Application Project.csproj",
               "RelativeDocumentMoniker": "Diary Application Project\\Diary Application Project.csproj",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Diary Application Project.csproj",
               "RelativeToolTip": "Diary Application Project\\Diary Application Project.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-01T19:23:49.903Z"
+              "WhenOpened": "2024-06-01T19:23:49.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "About_Us.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\About_Us.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\About_Us.cs",
@@ -159,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Program.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Program.cs",
@@ -171,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "About_Us.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\About_Us.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\About_Us.cs",
@@ -182,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ToSerach.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Class\\ToSerach.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Class\\ToSerach.cs",
@@ -194,28 +248,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Form1.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Form1.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Form1.cs",
               "RelativeToolTip": "Diary Application Project\\Form1.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAawHoAAAAbAAAA",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAMwIMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T18:17:27.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T18:17:27.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Form1.cs",
               "RelativeDocumentMoniker": "Diary Application Project\\Form1.cs",
               "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Diary Application Project\\Diary Application Project\\Form1.cs [Design]",
               "RelativeToolTip": "Diary Application Project\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T17:54:30.915Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-30T17:54:30.915Z"
             }
           ]
         }

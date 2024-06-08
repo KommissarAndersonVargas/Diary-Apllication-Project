@@ -245,6 +245,8 @@
             // 
             // AddMemo
             // 
+            this.AddMemo.AccessibleDescription = "To write a new memo";
+            this.AddMemo.AccessibleName = "To write a new memo";
             this.AddMemo.AutoSize = false;
             this.AddMemo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddMemo.Image = global::Diary_Application_Project.Properties.Resources.edit;
@@ -254,9 +256,12 @@
             this.AddMemo.Size = new System.Drawing.Size(91, 73);
             this.AddMemo.Text = "Add Memo";
             this.AddMemo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.AddMemo.Click += new System.EventHandler(this.AddMemo_Click);
             // 
             // SerachMemo
             // 
+            this.SerachMemo.AccessibleDescription = "Search memos";
+            this.SerachMemo.AccessibleName = "Serach memos";
             this.SerachMemo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SerachMemo.Image = global::Diary_Application_Project.Properties.Resources.search;
             this.SerachMemo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -268,6 +273,8 @@
             // 
             // Settings
             // 
+            this.Settings.AccessibleDescription = "Settings";
+            this.Settings.AccessibleName = "Settings";
             this.Settings.AutoSize = false;
             this.Settings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem});
@@ -283,11 +290,13 @@
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // Tools
             // 
+            this.Tools.AccessibleDescription = "Tools";
+            this.Tools.AccessibleName = "Tools";
             this.Tools.AutoSize = false;
             this.Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usersToolStripMenuItem});
@@ -303,12 +312,13 @@
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // Info
             // 
+            this.Info.AccessibleDescription = "Information";
             this.Info.AutoSize = false;
             this.Info.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutUsToolStripMenuItem,
@@ -325,14 +335,14 @@
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // toolStripButton7
@@ -365,14 +375,14 @@
             // loockScreenToolStripMenuItem
             // 
             this.loockScreenToolStripMenuItem.Name = "loockScreenToolStripMenuItem";
-            this.loockScreenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loockScreenToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.loockScreenToolStripMenuItem.Text = "Lock Aplication";
             this.loockScreenToolStripMenuItem.Click += new System.EventHandler(this.loockScreenToolStripMenuItem_Click);
             // 
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 

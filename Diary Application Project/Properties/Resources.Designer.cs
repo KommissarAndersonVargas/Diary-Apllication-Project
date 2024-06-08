@@ -63,9 +63,89 @@ namespace Diary_Application_Project.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _10131934_text_line_icon {
+            get {
+                object obj = ResourceManager.GetObject("_10131934_text_line_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _11055109_undo_return_left_arrow_previous_back_icon {
+            get {
+                object obj = ResourceManager.GetObject("_11055109_undo_return_left_arrow_previous_back_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1208662_brush_color_colour_paint_repair_icon {
+            get {
+                object obj = ResourceManager.GetObject("_1208662_brush_color_colour_paint_repair_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _173947_paste_icon {
+            get {
+                object obj = ResourceManager.GetObject("_173947_paste_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+        /// </summary>
+        internal static System.Drawing.Icon _2620508_employee_job_notes_seeker_unemployee_icon {
+            get {
+                object obj = ResourceManager.GetObject("_2620508_employee_job_notes_seeker_unemployee_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _351980_decrease_format_indent_icon {
+            get {
+                object obj = ResourceManager.GetObject("_351980_decrease_format_indent_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _352386_format_increase_indent_icon {
+            get {
+                object obj = ResourceManager.GetObject("_352386_format_increase_indent_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3994380_access_enter_input_login_sign_in_icon {
             get {
                 object obj = ResourceManager.GetObject("_3994380_access_enter_input_login_sign_in_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _46774_add_notes_paper_document_icon {
+            get {
+                object obj = ResourceManager.GetObject("_46774_add_notes_paper_document_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +166,106 @@ namespace Diary_Application_Project.Properties {
         internal static System.Drawing.Icon _7030346_login_ui_basic_app_sign_in_user_interface_icon {
             get {
                 object obj = ResourceManager.GetObject("_7030346_login_ui_basic_app_sign_in_user_interface_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8530597_copy_icon {
+            get {
+                object obj = ResourceManager.GetObject("_8530597_copy_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _85325_color_font_icon {
+            get {
+                object obj = ResourceManager.GetObject("_85325_color_font_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8542035_font_text_icon {
+            get {
+                object obj = ResourceManager.GetObject("_8542035_font_text_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _85541_as_guardar_save_icon {
+            get {
+                object obj = ResourceManager.GetObject("_85541_as_guardar_save_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8664990_bold_text_icon {
+            get {
+                object obj = ResourceManager.GetObject("_8664990_bold_text_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9023962_text_align_center_fill_icon {
+            get {
+                object obj = ResourceManager.GetObject("_9023962_text_align_center_fill_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9025920_text_align_justify_icon {
+            get {
+                object obj = ResourceManager.GetObject("_9025920_text_align_justify_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9027451_redo_icon {
+            get {
+                object obj = ResourceManager.GetObject("_9027451_redo_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9027551_undo_arrow_icon {
+            get {
+                object obj = ResourceManager.GetObject("_9027551_undo_arrow_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+        /// </summary>
+        internal static System.Drawing.Icon archive {
+            get {
+                object obj = ResourceManager.GetObject("archive", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

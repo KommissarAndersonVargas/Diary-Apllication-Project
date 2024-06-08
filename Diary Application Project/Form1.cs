@@ -122,5 +122,11 @@ namespace Diary_Application_Project
         {
             this.Refresh();
         }
+
+        private void AddMemo_Click(object sender, EventArgs e)
+        {
+            Memo memo = new Memo();
+            memo.Show();
+        }
     }
 }
