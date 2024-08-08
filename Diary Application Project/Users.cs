@@ -72,5 +72,15 @@ namespace Diary_Application_Project
             Properties.Settings.Default.User_pass = passWord;
             Properties.Settings.Default.Save();
         }
+
+        private void userNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

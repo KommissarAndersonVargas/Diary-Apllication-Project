@@ -22,14 +22,6 @@ namespace Diary_Application_Project
             userName.Text = Properties.Settings.Default.User_name;
         }
     
-
-        private void closeLonginAndApp_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            MessageBox.Show("Closing the Application", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            Application.Exit(); // fecha o programa
-        }
-
         private void Info_Click(object sender, EventArgs e)
         {
             About_Us aboutUs = new About_Us();
@@ -51,16 +43,28 @@ namespace Diary_Application_Project
                 this.Close();
 
             else if (passWord.Text == "")
-                MessageBox.Show("The passaword is null, please enter with your password");
+                MessageBox.Show("The passaword is null, please enter with your password", "Warning",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             
             else
-                MessageBox.Show("Wrong password or username. Please try again");        
+                MessageBox.Show("Wrong password or username. Please try again","Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);        
         }
 
         private void forgot_password_Click(object sender, EventArgs e)
         {
             Users users = new Users();
             users.Show();
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MessageBox.Show("Closing the Application", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Application.Exit(); // fecha o programa
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Diary_Application_Project
 {
     public partial class Memo : Form
     {
+        string pathFile = string.Empty;
         public Memo()
         {
             InitializeComponent();
@@ -112,6 +113,86 @@ namespace Diary_Application_Project
             {
                 this.Refresh();
                 this.richTextBox1.Clear();
+            }
+        }
+
+        private void SaveAs_Click(object sender, EventArgs e)
+        {
+            SalvarConteudo();
+        }
+        private void SalvarConteudo()
+        {
+            try
+            {
+                // Escolha o local e o nome do arquivo usando o SaveFileDialog
+                using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+                {
+                    saveFileDialog.Filter = "Arquivos RTF (*.rtf)|*.rtf|Todos os arquivos (*.*)|*.*";
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        // Salve o conteúdo do RichTextBox no arquivo RTF
+                        pathFile = saveFileDialog.FileName;
+                        richTextBox1.SaveFile(saveFileDialog.FileName, RichTextBoxStreamType.RichText);
+                        MessageBox.Show(" Information saved", "Information",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("An error ocurred", "Information",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void justSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (pathFile != string.Empty)
+                {
+                    richTextBox1.SaveFile(pathFile, RichTextBoxStreamType.RichText);
+                    MessageBox.Show(" Information saved", "Information",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    SalvarConteudo();
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("An error ocurred", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Open_Folder_Click(object sender, EventArgs e)
+        {
+            LoadRTFFile();
+        }
+        private void LoadRTFFile()
+        {
+            try
+            {
+                // Cria uma nova instância de OpenFileDialog
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+
+                // Define o filtro para arquivos RTF
+                openFileDialog.Filter = "Arquivos RTF|*.rtf";
+
+                // Exibe a caixa de diálogo OpenFileDialog
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Carrega o conteúdo do arquivo selecionado no RichTextBox
+                    richTextBox1.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.RichText);
+                }
+            }
+            catch(Exception ex)
+            {
+
+                MessageBox.Show("An error ocurred", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

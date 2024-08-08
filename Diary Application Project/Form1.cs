@@ -127,5 +127,17 @@ namespace Diary_Application_Project
             Memo memo = new Memo();
             memo.Show();
         }
+
+        private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process process = System.Diagnostics.Process.Start("calc.exe");
+            process.WaitForInputIdle();
+        }
+
+        private void openExcelContentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenExcel openExcel = new OpenExcel();
+            openExcel.Show();
+        }
     }
 }

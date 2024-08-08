@@ -51,6 +51,8 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tools = new System.Windows.Forms.ToolStripDropDownButton();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openExcelContentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Info = new System.Windows.Forms.ToolStripDropDownButton();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,12 +88,14 @@
             // clear_button
             // 
             this.clear_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.clear_button.FlatAppearance.BorderSize = 0;
+            this.clear_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clear_button.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clear_button.Location = new System.Drawing.Point(233, 302);
+            this.clear_button.Image = global::Diary_Application_Project.Properties.Resources._1398919_close_cross_incorrect_invalid_x_icon;
+            this.clear_button.Location = new System.Drawing.Point(243, 301);
             this.clear_button.Name = "clear_button";
-            this.clear_button.Size = new System.Drawing.Size(45, 26);
+            this.clear_button.Size = new System.Drawing.Size(35, 29);
             this.clear_button.TabIndex = 9;
-            this.clear_button.Text = "Clear";
             this.clear_button.UseVisualStyleBackColor = true;
             this.clear_button.Click += new System.EventHandler(this.clear_button_Click);
             // 
@@ -100,13 +104,15 @@
             this.serach_on_google.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.serach_on_google.Location = new System.Drawing.Point(38, 302);
             this.serach_on_google.Name = "serach_on_google";
-            this.serach_on_google.Size = new System.Drawing.Size(189, 25);
+            this.serach_on_google.Size = new System.Drawing.Size(216, 25);
             this.serach_on_google.TabIndex = 8;
             // 
             // button1
             // 
             this.button1.BackgroundImage = global::Diary_Application_Project.Properties.Resources.google2;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(4, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(28, 27);
@@ -148,12 +154,14 @@
             // 
             this.BackToPc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.BackToPc.BackColor = System.Drawing.Color.Transparent;
-            this.BackToPc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackToPc.FlatAppearance.BorderSize = 2;
+            this.BackToPc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackToPc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackToPc.Image = global::Diary_Application_Project.Properties.Resources.computer;
             this.BackToPc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BackToPc.Location = new System.Drawing.Point(67, 592);
+            this.BackToPc.Location = new System.Drawing.Point(41, 587);
             this.BackToPc.Name = "BackToPc";
-            this.BackToPc.Size = new System.Drawing.Size(146, 52);
+            this.BackToPc.Size = new System.Drawing.Size(186, 52);
             this.BackToPc.TabIndex = 0;
             this.BackToPc.Text = "Back to PC";
             this.BackToPc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,7 +170,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel2.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.user_name);
             this.panel2.Controls.Add(this.label1);
@@ -217,7 +225,8 @@
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.toolStrip1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.AddMemo,
@@ -290,7 +299,7 @@
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // Tools
@@ -299,7 +308,9 @@
             this.Tools.AccessibleName = "Tools";
             this.Tools.AutoSize = false;
             this.Tools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usersToolStripMenuItem});
+            this.usersToolStripMenuItem,
+            this.calculatorToolStripMenuItem,
+            this.openExcelContentToolStripMenuItem});
             this.Tools.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tools.Image = global::Diary_Application_Project.Properties.Resources.people;
             this.Tools.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -312,9 +323,23 @@
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
+            // 
+            // calculatorToolStripMenuItem
+            // 
+            this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
+            this.calculatorToolStripMenuItem.Text = "Calculator";
+            this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
+            // 
+            // openExcelContentToolStripMenuItem
+            // 
+            this.openExcelContentToolStripMenuItem.Name = "openExcelContentToolStripMenuItem";
+            this.openExcelContentToolStripMenuItem.Size = new System.Drawing.Size(212, 24);
+            this.openExcelContentToolStripMenuItem.Text = "Open excel content";
+            this.openExcelContentToolStripMenuItem.Click += new System.EventHandler(this.openExcelContentToolStripMenuItem_Click);
             // 
             // Info
             // 
@@ -335,14 +360,14 @@
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // toolStripButton7
@@ -450,6 +475,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem loockScreenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculatorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openExcelContentToolStripMenuItem;
     }
 }
 

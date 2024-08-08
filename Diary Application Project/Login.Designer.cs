@@ -39,8 +39,8 @@
             this.passWord = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.Info = new System.Windows.Forms.ToolStripButton();
-            this.closeLonginAndApp = new System.Windows.Forms.ToolStripButton();
             this.new_user = new System.Windows.Forms.ToolStripButton();
+            this.close = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,20 +92,22 @@
             // 
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 2;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(257, 379);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 36);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Login";
+            this.button1.Text = "Log in";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // forgot_password
             // 
+            this.forgot_password.FlatAppearance.BorderSize = 5;
             this.forgot_password.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forgot_password.Location = new System.Drawing.Point(257, 431);
+            this.forgot_password.Location = new System.Drawing.Point(257, 435);
             this.forgot_password.Name = "forgot_password";
             this.forgot_password.Size = new System.Drawing.Size(174, 36);
             this.forgot_password.TabIndex = 5;
@@ -135,16 +137,17 @@
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.RosyBrown;
+            this.toolStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Info,
-            this.closeLonginAndApp,
             this.new_user});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(689, 75);
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // Info
             // 
@@ -159,22 +162,10 @@
             this.Info.ToolTipText = "Information";
             this.Info.Click += new System.EventHandler(this.Info_Click);
             // 
-            // closeLonginAndApp
-            // 
-            this.closeLonginAndApp.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.closeLonginAndApp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.closeLonginAndApp.Image = global::Diary_Application_Project.Properties.Resources.close2;
-            this.closeLonginAndApp.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.closeLonginAndApp.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.closeLonginAndApp.Name = "closeLonginAndApp";
-            this.closeLonginAndApp.Size = new System.Drawing.Size(52, 72);
-            this.closeLonginAndApp.Text = "toolStripButton2";
-            this.closeLonginAndApp.Click += new System.EventHandler(this.closeLonginAndApp_Click);
-            // 
             // new_user
             // 
             this.new_user.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.new_user.Image = global::Diary_Application_Project.Properties.Resources._49576_new_add_plus_user_icon;
+            this.new_user.Image = global::Diary_Application_Project.Properties.Resources._new_add_plus_user_icon;
             this.new_user.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.new_user.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.new_user.Name = "new_user";
@@ -183,6 +174,19 @@
             this.new_user.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.new_user.Click += new System.EventHandler(this.new_user_Click);
             // 
+            // close
+            // 
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.FlatAppearance.BorderSize = 0;
+            this.close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close.Image = global::Diary_Application_Project.Properties.Resources._34217_close_delete_remove_icon;
+            this.close.Location = new System.Drawing.Point(630, 12);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(47, 48);
+            this.close.TabIndex = 9;
+            this.close.UseVisualStyleBackColor = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,6 +194,7 @@
             this.BackgroundImage = global::Diary_Application_Project.Properties.Resources.aurora_laranja_canada;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(689, 529);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.passWord);
             this.Controls.Add(this.userName);
             this.Controls.Add(this.forgot_password);
@@ -227,7 +232,7 @@
         private System.Windows.Forms.TextBox passWord;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton Info;
-        private System.Windows.Forms.ToolStripButton closeLonginAndApp;
         private System.Windows.Forms.ToolStripButton new_user;
+        private System.Windows.Forms.Button close;
     }
 }

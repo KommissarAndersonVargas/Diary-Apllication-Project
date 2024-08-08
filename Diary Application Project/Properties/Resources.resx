@@ -223,6 +223,9 @@
   <data name="_1208662_brush_color_colour_paint_repair_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1208662_brush_color_colour_paint_repair_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_1398919_close_cross_incorrect_invalid_x_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1398919_close_cross_incorrect_invalid_x_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_173947_paste_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\173947_paste_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -231,6 +234,9 @@
   </data>
   <data name="_2620508_employee_job_notes_seeker_unemployee_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2620508_employee_job_notes_seeker_unemployee_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_34217_close_delete_remove_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\34217_close_delete_remove_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_351980_decrease_format_indent_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\351980_decrease_format_indent_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -279,5 +285,8 @@
   </data>
   <data name="_9110890_text_align_right_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9110890_text_align_right_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_new_add_plus_user_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_new_add_plus_user_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

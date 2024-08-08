@@ -103,6 +103,16 @@ namespace Diary_Application_Project.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1398919_close_cross_incorrect_invalid_x_icon {
+            get {
+                object obj = ResourceManager.GetObject("_1398919_close_cross_incorrect_invalid_x_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _173947_paste_icon {
             get {
                 object obj = ResourceManager.GetObject("_173947_paste_icon", resourceCulture);
@@ -127,6 +137,16 @@ namespace Diary_Application_Project.Properties {
             get {
                 object obj = ResourceManager.GetObject("_2620508_employee_job_notes_seeker_unemployee_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _34217_close_delete_remove_icon {
+            get {
+                object obj = ResourceManager.GetObject("_34217_close_delete_remove_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -286,6 +306,16 @@ namespace Diary_Application_Project.Properties {
         internal static System.Drawing.Bitmap _9110890_text_align_right_icon {
             get {
                 object obj = ResourceManager.GetObject("_9110890_text_align_right_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _new_add_plus_user_icon {
+            get {
+                object obj = ResourceManager.GetObject("_new_add_plus_user_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
