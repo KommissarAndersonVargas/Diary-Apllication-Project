@@ -46,5 +46,113 @@ namespace Diary_Application_Project.Properties {
                 this["User_pass"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1111")]
+        public string User2 {
+            get {
+                return ((string)(this["User2"]));
+            }
+            set {
+                this["User2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1111")]
+        public string pass2 {
+            get {
+                return ((string)(this["pass2"]));
+            }
+            set {
+                this["pass2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1111")]
+        public string User3 {
+            get {
+                return ((string)(this["User3"]));
+            }
+            set {
+                this["User3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1111")]
+        public string pass3 {
+            get {
+                return ((string)(this["pass3"]));
+            }
+            set {
+                this["pass3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Configuração {
+            get {
+                return ((string)(this["Configuração"]));
+            }
+            set {
+                this["Configuração"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ActiveCaption")]
+        public global::System.Drawing.Color UserColor {
+            get {
+                return ((global::System.Drawing.Color)(this["UserColor"]));
+            }
+            set {
+                this["UserColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool backImageUsing {
+            get {
+                return ((bool)(this["backImageUsing"]));
+            }
+            set {
+                this["backImageUsing"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool IsUsingSetImage {
+            get {
+                return ((bool)(this["IsUsingSetImage"]));
+            }
+            set {
+                this["IsUsingSetImage"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PathBackGorundImage {
+            get {
+                return ((string)(this["PathBackGorundImage"]));
+            }
+            set {
+                this["PathBackGorundImage"] = value;
+            }
+        }
     }
 }

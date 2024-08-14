@@ -37,5 +37,6 @@ namespace Diary_Application_Project
         {
             this.version_number.Text = Application.ProductVersion.ToString();
         }
+        
     }
 }

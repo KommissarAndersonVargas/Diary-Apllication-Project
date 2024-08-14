@@ -41,6 +41,7 @@
             this.Info = new System.Windows.Forms.ToolStripButton();
             this.new_user = new System.Windows.Forms.ToolStripButton();
             this.close = new System.Windows.Forms.Button();
+            this.UserSelect = new System.Windows.Forms.ComboBox();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,11 +119,12 @@
             // userName
             // 
             this.userName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName.Location = new System.Drawing.Point(257, 217);
+            this.userName.Location = new System.Drawing.Point(257, 215);
             this.userName.Multiline = true;
             this.userName.Name = "userName";
             this.userName.Size = new System.Drawing.Size(174, 27);
             this.userName.TabIndex = 6;
+            this.userName.TextChanged += new System.EventHandler(this.userName_TextChanged);
             // 
             // passWord
             // 
@@ -187,6 +189,16 @@
             this.close.UseVisualStyleBackColor = false;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
+            // UserSelect
+            // 
+            this.UserSelect.FormattingEnabled = true;
+            this.UserSelect.Location = new System.Drawing.Point(449, 218);
+            this.UserSelect.Name = "UserSelect";
+            this.UserSelect.Size = new System.Drawing.Size(147, 21);
+            this.UserSelect.TabIndex = 10;
+            this.UserSelect.Text = "Select the User";
+            this.UserSelect.SelectedIndexChanged += new System.EventHandler(this.UserSelect_SelectedIndexChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,6 +206,7 @@
             this.BackgroundImage = global::Diary_Application_Project.Properties.Resources.aurora_laranja_canada;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(689, 529);
+            this.Controls.Add(this.UserSelect);
             this.Controls.Add(this.close);
             this.Controls.Add(this.passWord);
             this.Controls.Add(this.userName);
@@ -234,5 +247,6 @@
         private System.Windows.Forms.ToolStripButton Info;
         private System.Windows.Forms.ToolStripButton new_user;
         private System.Windows.Forms.Button close;
+        private System.Windows.Forms.ComboBox UserSelect;
     }
 }

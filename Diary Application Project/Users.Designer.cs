@@ -165,9 +165,9 @@
             this.close.FlatAppearance.BorderSize = 0;
             this.close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close.Image = global::Diary_Application_Project.Properties.Resources._34217_close_delete_remove_icon;
-            this.close.Location = new System.Drawing.Point(529, 12);
+            this.close.Location = new System.Drawing.Point(517, 12);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(42, 37);
+            this.close.Size = new System.Drawing.Size(54, 49);
             this.close.TabIndex = 10;
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.close_Click);

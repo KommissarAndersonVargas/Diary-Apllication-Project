@@ -79,6 +79,7 @@
             // 
             this.toolStrip2.AutoSize = false;
             this.toolStrip2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Save_as,
             this.NewMemo,
@@ -86,7 +87,7 @@
             this.GoToPaint});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(684, 91);
+            this.toolStrip2.Size = new System.Drawing.Size(684, 67);
             this.toolStrip2.TabIndex = 4;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -100,7 +101,7 @@
             this.Save_as.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Save_as.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Save_as.Name = "Save_as";
-            this.Save_as.Size = new System.Drawing.Size(64, 88);
+            this.Save_as.Size = new System.Drawing.Size(64, 64);
             this.Save_as.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // justSave
@@ -126,7 +127,7 @@
             this.NewMemo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.NewMemo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.NewMemo.Name = "NewMemo";
-            this.NewMemo.Size = new System.Drawing.Size(52, 88);
+            this.NewMemo.Size = new System.Drawing.Size(52, 64);
             this.NewMemo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.NewMemo.ToolTipText = "New file";
             this.NewMemo.Click += new System.EventHandler(this.NewMemo_Click);
@@ -140,7 +141,7 @@
             this.Open_Folder.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.Open_Folder.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Open_Folder.Name = "Open_Folder";
-            this.Open_Folder.Size = new System.Drawing.Size(52, 88);
+            this.Open_Folder.Size = new System.Drawing.Size(52, 64);
             this.Open_Folder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Open_Folder.ToolTipText = "Open Folder";
             this.Open_Folder.Click += new System.EventHandler(this.Open_Folder_Click);
@@ -152,7 +153,7 @@
             this.GoToPaint.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.GoToPaint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.GoToPaint.Name = "GoToPaint";
-            this.GoToPaint.Size = new System.Drawing.Size(52, 88);
+            this.GoToPaint.Size = new System.Drawing.Size(52, 64);
             this.GoToPaint.Text = "toolStripButton1";
             this.GoToPaint.ToolTipText = "Go to Microsoft Paint";
             this.GoToPaint.Click += new System.EventHandler(this.GoToPaint_Click);
@@ -164,6 +165,7 @@
             this.toolStrip1.AutoSize = false;
             this.toolStrip1.BackColor = System.Drawing.Color.LightGray;
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.font,
             this.toolStripSeparator1,
@@ -390,9 +392,9 @@
             this.ClientSize = new System.Drawing.Size(684, 692);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Memo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Memo";

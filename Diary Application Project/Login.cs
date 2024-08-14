@@ -19,6 +19,11 @@ namespace Diary_Application_Project
 
         private void Login_Load(object sender, EventArgs e)
         {
+            UserSelect.Text = Properties.Settings.Default.User_name;
+            UserSelect.Items.Add(Properties.Settings.Default.User_name);
+            UserSelect.Items.Add(Properties.Settings.Default.User2);
+            UserSelect.Items.Add(Properties.Settings.Default.User3);
+
             userName.Text = Properties.Settings.Default.User_name;
         }
     
@@ -66,5 +71,17 @@ namespace Diary_Application_Project
             MessageBox.Show("Closing the Application", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             Application.Exit(); // fecha o programa
         }
+
+        private void userName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selection = UserSelect.SelectedItem.ToString();
+            userName.Text = selection;
+        }
+
     }
 }

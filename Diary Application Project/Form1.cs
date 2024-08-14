@@ -13,6 +13,8 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Keys = OpenQA.Selenium.Keys;
 using OpenQA.Selenium.Edge;
+using System.Security.Policy;
+using OpenQA.Selenium.DevTools.V123.Emulation;
 
 namespace Diary_Application_Project
 {
@@ -55,6 +57,24 @@ namespace Diary_Application_Project
             user_name.Text = Properties.Settings.Default.User_name;
             Login login = new Login();
             login.ShowDialog();
+            SetColorChanged();
+            LoadDefaultSettings();
+            SetUserImage();
+        }
+        private void SetUserImage()
+        {
+            var IsUsingSetImege = Properties.Settings.Default.IsUsingSetImage;
+
+            if (IsUsingSetImege)
+            {
+                this.BackgroundImage = Image.FromFile(Properties.Settings.Default.PathBackGorundImage);
+            }
+        }
+        private void SetColorChanged()
+        {
+            var settingcolor = Properties.Settings.Default.UserColor;
+            this.panel2.BackColor = settingcolor;
+            this.toolStrip1.BackColor = settingcolor;
         }
         public void GetTimeNow() 
         {
@@ -74,19 +94,18 @@ namespace Diary_Application_Project
         }
         public void SearchOnGoogleChrome(string itenToSearch)
         {
-            IWebDriver driver = new EdgeDriver();
 
             try
             {
-                // Abre o Edge Microsoft
-                driver.Navigate().GoToUrl("https://www.google.com");
-
-                // Localiza a caixa de pesquisa e insere o texto
-                IWebElement searchBox = driver.FindElement(By.Name("q"));
-                searchBox.SendKeys(itenToSearch);
-
-                // Pressiona Enter para iniciar a pesquisa
-                searchBox.SendKeys(Keys.Enter);
+                string searchString = itenToSearch.Replace(" ", "_"); // Substitua pela string que você quer pesquisar
+                string edgePath = @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"; // Caminho 
+                ProcessStartInfo startInfo = new ProcessStartInfo
+                {
+                    FileName = edgePath,
+                    Arguments = $"https://www.bing.com/search?q={searchString}",
+                    UseShellExecute = true
+                };
+                Process.Start(startInfo);
             }
             catch (Exception)
             {
@@ -138,6 +157,62 @@ namespace Diary_Application_Project
         {
             OpenExcel openExcel = new OpenExcel();
             openExcel.Show();
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.colorDialog.ShowDialog();
+            Properties.Settings.Default.UserColor = this.colorDialog.Color;
+            var settingcolor = Properties.Settings.Default.UserColor;
+            settingcolor = this.colorDialog.Color;
+            this.panel2.BackColor = settingcolor;
+            this.toolStrip1.BackColor = settingcolor;
+            Properties.Settings.Default.Save();
+        }
+        //here
+        private void imageThemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.gif|Todos os arquivos|*.*";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    this.BackgroundImage = Image.FromFile(openFileDialog.FileName);
+                    Properties.Settings.Default.PathBackGorundImage = openFileDialog.FileName;
+                    Properties.Settings.Default.IsUsingSetImage = true;
+                    Properties.Settings.Default.Save();
+                }
+            }
+        }
+
+        private void defaultSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.UserColor = Color.LightSlateGray;
+            var settingcolor = Properties.Settings.Default.UserColor;
+            this.panel2.BackColor = settingcolor;
+            this.toolStrip1.BackColor = settingcolor;
+            var backImage = Properties.Resources.bears3;
+            this.BackgroundImage = backImage;
+            Properties.Settings.Default.backImageUsing = true;
+            Properties.Settings.Default.IsUsingSetImage = false;
+            this.BackgroundImage = Properties.Resources.bears3;
+            Properties.Settings.Default.Save();
+        }
+        private void LoadDefaultSettings()
+        {
+            var isEnable = Properties.Settings.Default.backImageUsing;
+            if (isEnable)
+            {
+                Properties.Settings.Default.UserColor = Color.LightSlateGray;
+                var backImage = Properties.Resources.bears3;
+                this.BackgroundImage = backImage;
+                Properties.Settings.Default.UserColor = Color.LightSlateGray;
+                var settingcolor = Properties.Settings.Default.UserColor;
+                this.panel2.BackColor = settingcolor;
+                this.toolStrip1.BackColor = settingcolor;
+                Properties.Settings.Default.backImageUsing = false; 
+                Properties.Settings.Default.Save();
+            }
         }
     }
 }

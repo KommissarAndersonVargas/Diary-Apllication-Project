@@ -8,5 +8,32 @@
     <Setting Name="User_pass" Type="System.String" Scope="User">
       <Value Profile="(Default)">111</Value>
     </Setting>
+    <Setting Name="User2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1111</Value>
+    </Setting>
+    <Setting Name="pass2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1111</Value>
+    </Setting>
+    <Setting Name="User3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1111</Value>
+    </Setting>
+    <Setting Name="pass3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1111</Value>
+    </Setting>
+    <Setting Name="Configuração" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ActiveCaption</Value>
+    </Setting>
+    <Setting Name="backImageUsing" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IsUsingSetImage" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PathBackGorundImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -46,9 +46,10 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.AddMemo = new System.Windows.Forms.ToolStripButton();
-            this.SerachMemo = new System.Windows.Forms.ToolStripButton();
             this.Settings = new System.Windows.Forms.ToolStripDropDownButton();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ColorTheme = new System.Windows.Forms.ToolStripMenuItem();
+            this.imageThemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.defaultSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tools = new System.Windows.Forms.ToolStripDropDownButton();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +62,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.loockScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -230,7 +232,6 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.AddMemo,
-            this.SerachMemo,
             this.Settings,
             this.Tools,
             this.Info,
@@ -245,7 +246,7 @@
             // 
             this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton1.Image = global::Diary_Application_Project.Properties.Resources.close2;
+            this.toolStripButton1.Image = global::Diary_Application_Project.Properties.Resources._2190987_cancel_circle_close_delete_dismiss_icon;
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
@@ -267,26 +268,15 @@
             this.AddMemo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.AddMemo.Click += new System.EventHandler(this.AddMemo_Click);
             // 
-            // SerachMemo
-            // 
-            this.SerachMemo.AccessibleDescription = "Search memos";
-            this.SerachMemo.AccessibleName = "Serach memos";
-            this.SerachMemo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SerachMemo.Image = global::Diary_Application_Project.Properties.Resources.search;
-            this.SerachMemo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.SerachMemo.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SerachMemo.Name = "SerachMemo";
-            this.SerachMemo.Size = new System.Drawing.Size(108, 72);
-            this.SerachMemo.Text = "Serach Memo";
-            this.SerachMemo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
             // Settings
             // 
             this.Settings.AccessibleDescription = "Settings";
             this.Settings.AccessibleName = "Settings";
             this.Settings.AutoSize = false;
             this.Settings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.settingsToolStripMenuItem});
+            this.ColorTheme,
+            this.imageThemeToolStripMenuItem,
+            this.defaultSettingsToolStripMenuItem});
             this.Settings.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Settings.Image = global::Diary_Application_Project.Properties.Resources.settings;
             this.Settings.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -296,11 +286,26 @@
             this.Settings.Text = "Settings";
             this.Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // settingsToolStripMenuItem
+            // ColorTheme
             // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(135, 24);
-            this.settingsToolStripMenuItem.Text = "Settings";
+            this.ColorTheme.Name = "ColorTheme";
+            this.ColorTheme.Size = new System.Drawing.Size(191, 24);
+            this.ColorTheme.Text = "Color Theme";
+            this.ColorTheme.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
+            // imageThemeToolStripMenuItem
+            // 
+            this.imageThemeToolStripMenuItem.Name = "imageThemeToolStripMenuItem";
+            this.imageThemeToolStripMenuItem.Size = new System.Drawing.Size(191, 24);
+            this.imageThemeToolStripMenuItem.Text = "Image Theme";
+            this.imageThemeToolStripMenuItem.Click += new System.EventHandler(this.imageThemeToolStripMenuItem_Click);
+            // 
+            // defaultSettingsToolStripMenuItem
+            // 
+            this.defaultSettingsToolStripMenuItem.Name = "defaultSettingsToolStripMenuItem";
+            this.defaultSettingsToolStripMenuItem.Size = new System.Drawing.Size(191, 24);
+            this.defaultSettingsToolStripMenuItem.Text = "Default Settings";
+            this.defaultSettingsToolStripMenuItem.Click += new System.EventHandler(this.defaultSettingsToolStripMenuItem_Click);
             // 
             // Tools
             // 
@@ -449,11 +454,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton AddMemo;
-        private System.Windows.Forms.ToolStripButton SerachMemo;
         private System.Windows.Forms.ToolStripDropDownButton Settings;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ColorTheme;
         private System.Windows.Forms.ToolStripDropDownButton Tools;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton Info;
@@ -477,6 +480,10 @@
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculatorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openExcelContentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem imageThemeToolStripMenuItem;
+        private System.Windows.Forms.ColorDialog colorDialog;
+        private System.Windows.Forms.ToolStripMenuItem defaultSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 
