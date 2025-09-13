@@ -35,7 +35,6 @@ namespace Diary_Application_Project
             userName = userNameBox.Text.ToString();
             passWord = passwordBox.Text.ToString();
             passWordConfirm = psswConfirmBox.Text.ToString();
-            SaveResourceInfo();
             var conditionLoad = userName.Length > 0 && passWord.Length > 0 && passWordConfirm.Length > 0;
 
             if (conditionLoad)
@@ -43,6 +42,7 @@ namespace Diary_Application_Project
                 if (CheckPassWord())
                 {
                     UserInfo userInfo = new UserInfo(userName, passWord, passWordConfirm);
+                    SaveResourceInfo();
                     MessageBox.Show("All information saved successfully", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 if (!CheckPassWord())

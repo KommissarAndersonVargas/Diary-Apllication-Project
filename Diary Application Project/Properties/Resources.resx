@@ -250,6 +250,9 @@
   <data name="_3994380_access_enter_input_login_sign_in_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3994380_access_enter_input_login_sign in_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_4373076_adobe_file_logo_logos_pdf_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4373076_adobe_file_logo_logos_pdf_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_46774_add_notes_paper_document_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\46774_add_notes_paper_document_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -258,6 +261,9 @@
   </data>
   <data name="_7030346_login_ui_basic_app_sign_in_user_interface_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7030346_login_ui basic_app_sign in_user interface_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_79894_excel_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\79894_excel_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_8530597_copy_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8530597_copy_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

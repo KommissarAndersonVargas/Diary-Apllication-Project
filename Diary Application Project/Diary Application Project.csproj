@@ -430,6 +430,12 @@
   <ItemGroup>
     <None Include="Resources\2190987_cancel_circle_close_delete_dismiss_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4373076_adobe_file_logo_logos_pdf_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79894_excel_icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Selenium.WebDriver.4.21.0\build\Selenium.WebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.4.21.0\build\Selenium.WebDriver.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

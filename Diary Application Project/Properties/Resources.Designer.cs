@@ -193,6 +193,16 @@ namespace Diary_Application_Project.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4373076_adobe_file_logo_logos_pdf_icon {
+            get {
+                object obj = ResourceManager.GetObject("_4373076_adobe_file_logo_logos_pdf_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _46774_add_notes_paper_document_icon {
             get {
                 object obj = ResourceManager.GetObject("_46774_add_notes_paper_document_icon", resourceCulture);
@@ -216,6 +226,16 @@ namespace Diary_Application_Project.Properties {
         internal static System.Drawing.Icon _7030346_login_ui_basic_app_sign_in_user_interface_icon {
             get {
                 object obj = ResourceManager.GetObject("_7030346_login_ui_basic_app_sign_in_user_interface_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+        /// </summary>
+        internal static System.Drawing.Icon _79894_excel_icon {
+            get {
+                object obj = ResourceManager.GetObject("_79894_excel_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

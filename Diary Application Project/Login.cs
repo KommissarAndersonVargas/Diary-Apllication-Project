@@ -19,11 +19,6 @@ namespace Diary_Application_Project
 
         private void Login_Load(object sender, EventArgs e)
         {
-            UserSelect.Text = Properties.Settings.Default.User_name;
-            UserSelect.Items.Add(Properties.Settings.Default.User_name);
-            UserSelect.Items.Add(Properties.Settings.Default.User2);
-            UserSelect.Items.Add(Properties.Settings.Default.User3);
-
             userName.Text = Properties.Settings.Default.User_name;
         }
     
@@ -76,12 +71,5 @@ namespace Diary_Application_Project
         {
 
         }
-
-        private void UserSelect_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string selection = UserSelect.SelectedItem.ToString();
-            userName.Text = selection;
-        }
-
     }
 }
