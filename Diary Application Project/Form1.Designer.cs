@@ -63,10 +63,14 @@
             this.loockScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.webViewPanel = new System.Windows.Forms.Panel();
+            this.webView = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.webViewPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.webView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -416,6 +420,29 @@
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
+            // webViewPanel
+            // 
+            this.webViewPanel.BackColor = System.Drawing.Color.Transparent;
+            this.webViewPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.webViewPanel.Controls.Add(this.webView);
+            this.webViewPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.webViewPanel.Location = new System.Drawing.Point(617, 75);
+            this.webViewPanel.Name = "webViewPanel";
+            this.webViewPanel.Size = new System.Drawing.Size(319, 657);
+            this.webViewPanel.TabIndex = 3;
+            // 
+            // webView
+            // 
+            this.webView.AllowExternalDrop = true;
+            this.webView.CreationProperties = null;
+            this.webView.DefaultBackgroundColor = System.Drawing.Color.Transparent;
+            this.webView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webView.Location = new System.Drawing.Point(0, 0);
+            this.webView.Name = "webView";
+            this.webView.Size = new System.Drawing.Size(315, 653);
+            this.webView.TabIndex = 0;
+            this.webView.ZoomFactor = 1D;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,6 +452,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 788);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.webViewPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.toolStrip1);
@@ -445,6 +473,8 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.webViewPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.webView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -484,6 +514,8 @@
         private System.Windows.Forms.ColorDialog colorDialog;
         private System.Windows.Forms.ToolStripMenuItem defaultSettingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.Panel webViewPanel;
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView;
     }
 }
 

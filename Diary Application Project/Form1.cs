@@ -15,6 +15,8 @@ using Keys = OpenQA.Selenium.Keys;
 using OpenQA.Selenium.Edge;
 using System.Security.Policy;
 using OpenQA.Selenium.DevTools.V123.Emulation;
+using DocumentFormat.OpenXml.Drawing;
+using Microsoft.Web.WebView2.Core;
 
 namespace Diary_Application_Project
 {
@@ -23,6 +25,7 @@ namespace Diary_Application_Project
         public Form1()
         {
             InitializeComponent();
+            InitializeWebView();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -212,6 +215,34 @@ namespace Diary_Application_Project
                 this.toolStrip1.BackColor = settingcolor;
                 Properties.Settings.Default.backImageUsing = false; 
                 Properties.Settings.Default.Save();
+            }
+        }
+        
+        public async void InitializeWebView()
+        {
+            try
+            {
+                // Configurar o ambiente do WebView2
+                var environment = await CoreWebView2Environment.CreateAsync(null, null, null);
+
+                // Aguardar a inicialização
+                await webView.EnsureCoreWebView2Async(environment);
+
+                // Configurar o WebView2
+                webView.CoreWebView2.Settings.AreDevToolsEnabled = true;
+                webView.CoreWebView2.Settings.AreDefaultContextMenusEnabled = true;
+                webView.CoreWebView2.Settings.IsZoomControlEnabled = true;
+
+
+                webView.CoreWebView2.Settings.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36";
+
+                // Navegar para o Copilot (Bing Chat)
+                webView.CoreWebView2.Navigate("https://copilot.microsoft.com/");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao inicializar WebView2: {ex.Message}");
             }
         }
     }
